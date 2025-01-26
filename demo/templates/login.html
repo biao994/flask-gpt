@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>登录</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column; /* 垂直排列 */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            display: flex; 
+            align-items: flex-end; 
+            gap: 10px; 
+        }
+
+        input {
+            flex: 1; 
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+        form {
+            width: 300px; /* 限制表单宽度 */
+        }
+    </style>
+</head>
+<body>
+    <h1>登录页面</h1> <!-- 标题放在表单上方 -->
+    <form action="/login" method="POST">
+        <div>
+            <label for="username">用户名:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+            <label for="password">密码:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">登录</button>
+        </div>
+    </form>
+</body>
+</html>
